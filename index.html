@@ -10,12 +10,12 @@
   <main id="main-doc">
     <nav id="navbar">
       <header id="nav-header">CSS Guide</header>
-      <ul>
+      <ul id="navul">
         <li><a class="nav-link" href="#introduction">Introduction</a></li>
         <li><a class="nav-link" href="#syntax">Syntax</a></li>
         <li><a class="nav-link" href="#selectors">Selectors</a></li>
-        <li><a class="nav-link" href="#Text4">Text4</a></li>
-        <li><a class="nav-link" href="#Text5">Text5</a></li>
+        <li><a class="nav-link" href="#colors">Colors</a></li>
+        <li><a class="nav-link" href="#styling-elements">Styling Elements</a></li>
       </ul>
     </nav>
     <section class="main-section" id="introduction">
@@ -46,23 +46,60 @@
     </section>
     <section class="main-section" id="selectors">
       <header class="underline">Selectors</header>
-      <p></p>
-      <p></p>
+      <p>A selector is the part that selects the element in the html document that we are going to style, there are different selectors:</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Selector</th>
+            <th>Use</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th class="table-header yellow">*</td>
+            <td>Selects every single element in the document (general selector)</td>
+          </tr>
+          <tr>
+            <th class="table-header yellow">.class</td>
+            <td>Selects the elements with the specified class, you need to use a period and the name of the class after that</td>
+          </tr>
+          <tr>
+            <th class="table-header yellow">#id</td>
+            <td>Selects the element with the specified id, you need to use the numeral symbol and the name of the id after that</td>
+          </tr>
+          <tr>
+            <th class="table-header yellow">h1, body, header</td>
+            <td>Selects an specific type of element, if you separate every element with a coma, you can select many different elements that need the same changes</td>
+          </tr>
+          <tr>
+            <th class="table-header yellow">div.class</td>
+            <td>This selects all the elements with that class, but only the ones that are inside of a div (elements with the class that are not contained inside of a div won't be affected)</td>
+          </tr>
+          <tr>
+            <th class="table-header yellow">span [class="class"]</th>
+            <td>This is other way to select a class inside an element</th>
+          </tr>
+        </tbody>
+      </table>
     </section>
-    <section class="main-section" id="Text3">
-      <header>Text3</header>
-      <p></p>
-      <p></p>
+    <section class="main-section" id="colors">
+      <header class="underline">Colors</header>
+      <p>There are 4 different ways to select an specific color:</p>
+      <ul>
+        <li><span class="yellow underline">Pseudo:</span> There are some basic colors that are preset, for example: <span class="black">black</span>, white, <span class="green">green</span>, <span class="blue">blue</span>, etc.</li>
+        <li><span class="yellow underline">RGB:</span> This uses a different syntax <span class="blue">rgb(#, #, #)</span>. Every number inside of the parenthesis stands for the amount of color, red for the first one, green for the second and blue for the last one. This numbers can be in a range between 0 and 255.</li>
+        <li><span class="yellow underline">RGBA:</span> This one uses a similar syntax <span class="blue">rgba(#, #, #, #)</span>. The first 3 numbers stands for the same as in the rgb style but this one has a fouth number that stands for the opacity.</li>
+        <li><span class="yellow underline">Hexadecimal:</span> This is the last way to select a color, this uses a more simple syntax <span class="blue">#000000</span>. As it's name said, this uses an hexadecimal syntax (in a range from 0 to f) but using the same idea as before, the first 2 digits stands for the red, the second 2 digits for the green and the last ones for blue.</li>
+      </ul>
     </section>
-    <section class="main-section" id="Text4">
-      <header>Text4</header>
-      <p></p>
-      <p></p>
+    <section class="main-section" id="styling-elements">
+      <header class="underline">Styling Elements</header>
+      <div class="background">
+        <h2 class="underline">Background:</h2>
+      </div>
     </section>
     <section class="main-section" id="Text5">
       <header>Text5</header>
-      <p></p>
-      <p></p>
     </section>
   </main>
 </body>
