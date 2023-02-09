@@ -15,7 +15,7 @@
         <li><a class="nav-link" href="#syntax">Syntax</a></li>
         <li><a class="nav-link" href="#selectors">Selectors</a></li>
         <li><a class="nav-link" href="#colors">Colors</a></li>
-        <li><a class="nav-link" href="#styling-elements">Styling Elements</a></li>
+        <li><a class="nav-link" href="#styling_elements">Styling Elements</a></li>
       </ul>
     </nav>
     <section class="main-section" id="introduction">
@@ -84,18 +84,27 @@
     </section>
     <section class="main-section" id="colors">
       <header class="underline">Colors</header>
-      <p>There are 4 different ways to select an specific color:</p>
+      <p>There are different ways to select an specific color:</p>
       <ul>
         <li><span class="yellow underline">Pseudo:</span> There are some basic colors that are preset, for example: <span class="black">black</span>, white, <span class="green">green</span>, <span class="blue">blue</span>, etc.</li>
         <li><span class="yellow underline">RGB:</span> This uses a different syntax <span class="blue">rgb(#, #, #)</span>. Every number inside of the parenthesis stands for the amount of color, red for the first one, green for the second and blue for the last one. This numbers can be in a range between 0 and 255.</li>
         <li><span class="yellow underline">RGBA:</span> This one uses a similar syntax <span class="blue">rgba(#, #, #, #)</span>. The first 3 numbers stands for the same as in the rgb style but this one has a fouth number that stands for the opacity.</li>
+        <li><span class="yellow underline">HSL:</span> The syntax in this one is <span class="blue">hsl(hue, saturation, lightness)</span>. The first is a normal digit from 0 to 360 as in the color wheel (0 is red, 120 green and 360 blue), and the other two elements are percentages from 0% to 100%</li>
         <li><span class="yellow underline">Hexadecimal:</span> This is the last way to select a color, this uses a more simple syntax <span class="blue">#000000</span>. As it's name said, this uses an hexadecimal syntax (in a range from 0 to f) but using the same idea as before, the first 2 digits stands for the red, the second 2 digits for the green and the last ones for blue.</li>
       </ul>
     </section>
-    <section class="main-section" id="styling-elements">
+    <section class="main-section" id="styling_elements">
       <header class="underline">Styling Elements</header>
       <div class="background">
         <h2 class="underline">Background:</h2>
+        <p>You can style the background in every single element:</p>
+        <ul>
+          <li><span class="yellow">background-color:</span> Changes the color of the background using any of the color selection styles.</li>
+          <li><span class="yellow">background-image:</span> For this one you should use the url of an image (just use <span class="blue">url("www.exampleurl.com")</span>) or if you have the image downloaded in your device, you can select it by its direction in your folders.</li>
+          <li><span class="yellow">background-repeat:</span> If you want your background image to repeat in any axis,or not, you can select this property (some images depending of it's dimensions can be repeated by default)</li>
+          <li><span class="yellow">background-position:</span> This property is used to select the position of the image in the background.</li>
+          <li><span class="yellow">background:</span> This is a shorthand property that wrap all the properties before in a single one, it's syntax is simplier <span class="blue">background: <span class="green">#fff url("www.exampleurl.com") no-repeat right bottom</span>;</span></li>
+        </ul>
       </div>
     </section>
     <section class="main-section" id="Text5">
