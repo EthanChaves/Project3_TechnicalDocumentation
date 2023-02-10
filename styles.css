@@ -1,3 +1,5 @@
+@import url('https://css.gg/info.css');
+
 html {
   font-family: sans-serif;
   color: #ffffffc1;
@@ -110,6 +112,16 @@ th.table-header {
   width: 200px;
 }
 
+img {
+  position: relative;
+  left: 90px;
+}
+
+i.gg-info {
+  position: relative;
+  top: 20px;
+}
+
 .blue {
   color: rgb(74, 185, 255);
 }
@@ -124,4 +136,12 @@ th.table-header {
 
 .green {
   color: greenyellow;
+}
+
+#boxmodel {
+  box-shadow: 0 0 10px 0 #000;
+}
+
+.bulb p {
+  display: inline;
 }

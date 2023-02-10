@@ -1,3 +1,4 @@
+<!--https://www.w3schools.com/css/css_background_shorthand.asp-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,6 +17,7 @@
         <li><a class="nav-link" href="#selectors">Selectors</a></li>
         <li><a class="nav-link" href="#colors">Colors</a></li>
         <li><a class="nav-link" href="#styling_elements">Styling Elements</a></li>
+        <li><a class="nav-link" href="#box_model_and_position">Box-model and Dimensions</a></li>
       </ul>
     </nav>
     <section class="main-section" id="introduction">
@@ -95,7 +97,7 @@
     </section>
     <section class="main-section" id="styling_elements">
       <header class="underline">Styling Elements</header>
-      <div class="background">
+      <div id="background">
         <h2 class="underline">Background:</h2>
         <p>You can style the background in every single element:</p>
         <ul>
@@ -106,9 +108,51 @@
           <li><span class="yellow">background:</span> This is a shorthand property that wrap all the properties before in a single one, it's syntax is simplier <span class="blue">background: <span class="green">#fff url("www.exampleurl.com") no-repeat right bottom</span>;</span></li>
         </ul>
       </div>
+      <div id="border">
+        <h2 class="underline">Border:</h2>
+        <p>You can change the style of your element's border or make it invicible if you want.</p>
+        <ul>
+          <li><span class="yellow">border-color:</span> Changes the color of the border using any of the color selection styles.</li>
+          <li><span class="yellow">border-style:</span> You can change the form of your border, it could be solid, dotted, double, etc.</li>
+          <li><span class="yellow">broder-radius:</span> This will make the border corners rounded, you can select how rounded the corners will be.</li>
+          <li><span class="yellow">border-width:</span> This will change the thickness of the border.</li>
+          <li><span class="yellow">border:</span> This is a shorthand property that wrap all the properties before in a single one, it's syntax is simplier <span class="blue">border: <span class="green">5px #fff double</span>;</span></li>
+          <li><span class="yellow">border-top / border-bottom / border-right / border-left:</span> This properties will make the same changes as before but only in the border at the selected side of the element.</li></ul>
+      </div>
+      <div id="outline">
+        <h2 class="underline">Outline:</h2>
+        <p>Is the line between the border and the margin.</p>
+        <ul>
+          <li><span class="yellow">outline-color:</span> Changes the color of the line.</li>
+          <li><span class="yellow">outline-style:</span> Same as in the border, it refers to the form of it, it could be solid, dotted, etc.</li>
+          <li><span class="yellow">outline-width:</span> This changes the thickness of the line.</li>
+          <li><span class="yellow">outline:</span> This shorthand property wrap all the properties mentioned before. it's syntax is simplier <span class="blue">outline: <span class="green">5px #fff dotted</span>;</span></li>
+        </ul>
+      </div>
+      <div id="text-and-font">
+        <h2 class="underline">Text and font:</h2>
+        <p>You can style your text in different ways:</p>
+        <ul>
+          <li><span class="yellow"></span></li>
+        </ul>
+      </div>
     </section>
-    <section class="main-section" id="Text5">
-      <header>Text5</header>
+    <section class="main-section" id="box_model_and_position">
+      <header class="underline">Box-model and Position</header>
+      <div class="dimensions">
+        <h2 class="underline">Box Model:</h2>
+        <p>Here is an ilustration to simplify what we are going to learn in this part:</p>
+        <img id="boxmodel" src="https://miro.medium.com/max/382/1*LYIt459KOTM4R-uQFHg_bw.png" alt="CSS Box Model">
+        <div class="bulb">
+          <i class="gg-info"></i>
+          <p class="indent">Every element may recieve one, two or four values. If it takes one value, it will me applied to every side of the element. If it takes two values, the first one will be applied for the top and bottom and the second one will be applied to the right and left sides. And if it takes four values, every value will be applied in this order: top, right, bottom and left.</p>
+        </div>
+        <ul>
+          <li><span class="yellow">Margin:</span> Is the space outside the element.</li>
+          <li><span class="yellow">Padding:</span> Is the space between the border and the content of the element.</li>
+          <li><span class="yellow">Width and Height:</span> This are the dimensions for the element.</li>
+        </ul>
+      </div>
     </section>
   </main>
 </body>
