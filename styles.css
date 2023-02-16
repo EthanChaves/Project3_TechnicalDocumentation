@@ -1,0 +1,182 @@
+@import url('https://css.gg/info.css');
+
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #ffffffc1;
+  background-color: #343434;
+  background-position: 10%;
+  margin: 0;
+  padding: 0;
+}
+
+#nav-header {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#navbar {
+  z-index: 1;
+}
+
+header {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+nav {
+  background-color:rgb(0, 46, 87);
+  border-right: 4px #000 solid;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 300px;
+  overflow: hidden;
+  transition: width 0.2s linear;
+  text-align: center;
+}
+
+div {
+  position: relative;
+  left: 25px;
+}
+
+ul#navul {
+  list-style: none;
+  text-align: left;
+  position: relative;
+  left: -30px;
+  margin: 120px auto;
+}
+
+ul#navul li {
+  border-bottom: 3px #c8c8c8 solid;
+  margin: 25px auto !important;
+}
+
+ul {
+  list-style: circle;
+}
+
+li {
+  margin: 10px auto;
+}
+
+#navul a:link {
+  color:white !important;
+  font-size: 20px !important;
+  text-decoration: none !important;
+}
+
+#navul a:hover {
+  color:rgb(255, 221, 0);
+}
+
+a:link {
+  color: greenyellow;
+}
+
+a:visited {
+  color: white;
+}
+
+section {
+  font-size: 1.2rem;
+  position: relative;
+  top: 0;
+  left: 325px;
+  width: 75%;
+  margin-top: 30px;
+}
+
+section:first-of-type {
+  margin-top: 0;
+}
+
+.underline {
+  text-decoration: underline;
+  text-decoration-color:  rgb(255, 221, 0);
+}
+
+.code {
+  background-color:rgb(29, 29, 29);
+  color: #fff;
+  font-size: 1rem;
+  max-width: 650px;
+  position:relative;
+  left: 75px;
+  border: 2px #fff solid;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.indent {
+  margin: 0 0 0 30px;
+}
+
+table {
+  border-collapse: collapse;
+  border: 0;
+  background-color: rgb(29, 29, 29);
+}
+
+th, td {
+  border: 1px rgb(255, 221, 0) solid;
+  padding: 4px;
+}
+
+td {
+  position:relative;
+  left: 5px;
+}
+
+th.table-header {
+  text-align: center;
+  width: 200px;
+}
+
+img {
+  position: relative;
+  left: 90px;
+}
+
+i.gg-info {
+  position: relative;
+  top: 20px;
+}
+
+.blue {
+  color: rgb(74, 185, 255);
+}
+
+.yellow {
+  color: rgb(255, 221, 0);
+}
+
+.black  {
+  color: #000;
+}
+
+.green {
+  color: greenyellow;
+}
+
+#boxmodel {
+  box-shadow: 0 0 10px 0 #000;
+}
+
+.bulb p {
+  display: inline;
+}
+
+@media (max-width: 750px) {
+  nav {
+    width: 200px;
+  }
+
+  section {
+    width: 400px;
+    margin-right: 100px;
+  }
+}
