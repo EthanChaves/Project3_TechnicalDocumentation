@@ -63,14 +63,22 @@ li {
   margin: 10px auto;
 }
 
-#navul a {
+#navul a:link {
   color:white !important;
   font-size: 20px !important;
   text-decoration: none !important;
 }
 
-a {
+#navul a:hover {
+  color:rgb(255, 221, 0);
+}
+
+a:link {
   color: greenyellow;
+}
+
+a:visited {
+  color: white;
 }
 
 section {
@@ -95,7 +103,7 @@ section:first-of-type {
   background-color:rgb(29, 29, 29);
   color: #fff;
   font-size: 1rem;
-  max-width: 350px;
+  max-width: 650px;
   position:relative;
   left: 75px;
   border: 2px #fff solid;
@@ -160,4 +168,15 @@ i.gg-info {
 
 .bulb p {
   display: inline;
+}
+
+@media (max-width: 750px) {
+  nav {
+    width: 200px;
+  }
+
+  section {
+    width: 400px;
+    margin-right: 100px;
+  }
 }

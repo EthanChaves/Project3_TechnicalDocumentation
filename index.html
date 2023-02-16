@@ -16,7 +16,7 @@
         <li><a class="nav-link" href="#selectors">Selectors</a></li>
         <li><a class="nav-link" href="#colors">Colors</a></li>
         <li><a class="nav-link" href="#styling_elements">Styling Elements</a></li>
-        <li><a class="nav-link" href="#box_model_and_position">Box-model and Position</a></li>
+        <li><a class="nav-link" href="#box-model_and_position">Box-model and Position</a></li>
         <li><a class="nav-link" href="#reference">Reference</a></li>
       </ul>
     </nav>
@@ -94,6 +94,19 @@
         <li><span class="yellow underline">HSL:</span> The syntax in this one is <span class="blue">hsl(hue, saturation, lightness)</span>. The first is a normal digit from 0 to 360 as in the color wheel (0 is red, 120 green and 360 blue), and the other two elements are percentages from 0% to 100%</li>
         <li><span class="yellow underline">Hexadecimal:</span> This is the last way to select a color, this uses a more simple syntax <span class="blue">#000000</span>. As it's name said, this uses an hexadecimal syntax (in a range from 0 to f) but using the same idea as before, the first 2 digits stands for the red, the second 2 digits for the green and the last ones for blue.</li>
       </ul>
+      <p class="code">
+        <code>
+          <span class="yellow">span</span> {<br>
+          <span class="indent"><span class="blue">background-color:</span> red<span class="blue">;</span><br></span>
+          } <br><br>
+          <span class="yellow">h1</span> {<br>
+          <span class="indent"><span class="blue">color:</span> rgb(255, 221, 0)<span class="blue">;</span><br></span>
+          } <br><br>
+          <span class="yellow">#navbar</span> {<br>
+          <span class="indent"><span class="blue">background-color:</span> #002e57<span class="blue">;</span><br></span>
+          }
+        </code>
+      </p>
     </section>
     <section class="main-section" id="styling_elements">
       <header class="underline">Styling Elements</header>
@@ -105,8 +118,18 @@
           <li><span class="yellow">background-image:</span> For this one you should use the url of an image (just use <span class="blue">url("www.exampleurl.com")</span>) or if you have the image downloaded in your device, you can select it by its direction in your folders.</li>
           <li><span class="yellow">background-repeat:</span> If you want your background image to repeat in any axis,or not, you can select this property (some images depending of it's dimensions can be repeated by default)</li>
           <li><span class="yellow">background-position:</span> This property is used to select the position of the image in the background.</li>
-          <li><span class="yellow">background:</span> This is a shorthand property that wrap all the properties before in a single one, it's syntax is simplier <span class="blue">background: <span class="green">#fff url("www.exampleurl.com") no-repeat right bottom</span>;</span></li>
+          <li><span class="yellow">background:</span> This is a shorthand property that wrap all the properties before in a single one, it recieve first the color for the background, later the image url (if you want to), if you want your image to repeat and the last two values are the position of the background image.</li>
         </ul>
+        <p class="code">
+          <code>
+            <span class="yellow">section</span> {<br>
+            <span class="indent"><span class="blue">background-image:</span> ./bricks.png<span class="blue">;</span><br></span>
+            } <br><br>
+            <span class="yellow">ul</span> {<br>
+            <span class="indent"><span class="blue">background:</span> #fff url("www.exampleurl.com") no-repeat right bottom<span class="blue">;</span><br></span>
+            }
+          </code>
+        </p>
       </div>
       <div id="border">
         <h2 class="underline">Border:</h2>
@@ -116,8 +139,17 @@
           <li><span class="yellow">border-style:</span> You can change the form of your border, it could be solid, dotted, double, etc.</li>
           <li><span class="yellow">broder-radius:</span> This will make the border corners rounded, you can select how rounded the corners will be.</li>
           <li><span class="yellow">border-width:</span> This will change the thickness of the border.</li>
-          <li><span class="yellow">border:</span> This is a shorthand property that wrap all the properties before in a single one, it's syntax is simplier <span class="blue">border: <span class="green">5px #fff double</span>;</span></li>
-          <li><span class="yellow">border-top / border-bottom / border-right / border-left:</span> This properties will make the same changes as before but only in the border at the selected side of the element.</li></ul>
+          <li><span class="yellow">border-top / border-bottom / border-right / border-left:</span> This properties will make the same changes as before but only in the border at the selected side of the element.</li>
+          <li><span class="yellow">border:</span> This is a shorthand property that wrap all the properties before in a single one, it's syntax is simplier, this property recieves a width, a color and the style of the border.</li>
+        </ul>
+        <p class="code">
+          <code>
+            <span class="yellow">div</span> {<br>
+            <span class="indent"><span class="blue">border:</span> 5px blue double<span class="blue">;</span><br></span>
+            <span class="indent"><span class="blue">border-radius:</span> 10px<span class="blue">;</span><br></span>
+            }
+          </code>
+        </p>
       </div>
       <div id="outline">
         <h2 class="underline">Outline:</h2>
@@ -126,8 +158,15 @@
           <li><span class="yellow">outline-color:</span> Changes the color of the line.</li>
           <li><span class="yellow">outline-style:</span> Same as in the border, it refers to the form of it, it could be solid, dotted, etc.</li>
           <li><span class="yellow">outline-width:</span> This changes the thickness of the line.</li>
-          <li><span class="yellow">outline:</span> This shorthand property wrap all the properties mentioned before. it's syntax is simplier <span class="blue">outline: <span class="green">5px #fff dotted</span>;</span></li>
+          <li><span class="yellow">outline:</span> This shorthand property wrap all the properties mentioned before. it's syntax is the same as the border property, first comes the width, later the color and and at the end the style of the line.</li>
         </ul>
+        <p class="code">
+          <code>
+            <span class="yellow">section</span> {<br>
+            <span class="indent"><span class="blue">outline:</span> 3px #faffaa solid<span class="blue">;</span><br></span>
+            }
+          </code>
+        </p>
       </div>
       <div id="text-and-font">
         <h2 class="underline">Text and font:</h2>
@@ -135,12 +174,21 @@
         <ul>
           <li><span class="yellow">text-align:</span> Aligns the text to the place that you want it to be (uses the parent element as reference)</li>
           <li><span class="yellow">text-shadow:</span> This will make a shadow behind the text, it will recieve 2 values to ubicate it (hotizontal and vertical) and a third one that will selects it's color.</li>
-          <li><span class="yellow">text-decoration:</span> This property will decorate the text. It's syntax is <span class="blue">text-decoration: <span class="green">underline blue double 3px</span>;</span> . It may recieve 4 different values, only the first one (where the line goes) is required, the other ones are opcional.</li>
+          <li><span class="yellow">text-decoration:</span> This property will decorate the text. It may recieve 4 different values, only the first one (where the line goes) is required, the other ones are opcional.</li>
           <li><span class="yellow">font-family:</span> With this one you can select one or more different fonts to your text (in case that the first one is not supported by browser, the next one will be selected.</li>
           <li><span class="yellow">font-style:</span> It changes the style of your text, for example if you want it italic, oblique...</li>
           <li><span class="yellow">font-weight:</span> Changes how bold or thin text letters will be.</li>
           <li><span class="yellow">font-size:</span> With this property you can change the size of text.</li>
         </ul>
+        <p class="code">
+          <code>
+            <span class="yellow">h3</span> {<br>
+            <span class="indent"><span class="blue">font-family:</span> sans-serif<span class="blue">;</span><br></span>
+            <span class="indent"><span class="blue">text-decoration:</span> underline blue<span class="blue">;</span><br></span>
+            <span class="indent"><span class="blue">text-align:</span> center<span class="blue">;</span><br></span>
+            }
+          </code>
+        </p>
       </div>
       <div id="links_status">
         <h2 class="underline">Links status:</h2>
@@ -151,10 +199,29 @@
           <li><span class="yellow">a:hover</span> is the style when you put your mouse over the link.</li>
           <li><span class="yellow">a:active</span> is the style when you click the link.</li>
         </ul>
+        <p class="code">
+          <code>
+            <span class="yellow">a:link</span> {<br>
+            <span class="indent"><span class="blue">color:</span> white<span class="blue">;</span><br></span>
+            <span class="indent"><span class="blue">background-color:</span> blue<span class="blue">;</span><br></span>
+            <span class="indent"><span class="blue">border:</span> 3px solid white<span class="blue">;</span><br></span>
+            } <br><br>
+            <span class="yellow">a:visited</span> {<br>
+            <span class="indent"><span class="blue">color:</span> yellow<span class="blue">;</span><br></span>
+            <span class="indent"><span class="blue">background-color:</span> blue<span class="blue">;</span><br></span>
+            <span class="indent"><span class="blue">border:</span> 3px solid yellow<span class="blue">;</span><br></span>
+            } <br><br>
+            <span class="yellow">a:hover</span> {<br>
+              <span class="indent"><span class="blue">color:</span> red<span class="blue">;</span><br></span>
+              <span class="indent"><span class="blue">background-color:</span> white<span class="blue">;</span><br></span>
+              <span class="indent"><span class="blue">border:</span> 3px solid red<span class="blue">;</span><br></span>
+            }
+          </code>
+        </p>
         <p><span class="blue">NOTE:</span> The order that selectors appeared in the list before is important because if you don't follow this order, the styles aren't going to work.</p>
       </div>
     </section>
-    <section class="main-section" id="box_model_and_position">
+    <section class="main-section" id="box-model_and_position">
       <header class="underline">Box-model and Position</header>
       <div class="dimensions">
         <h2 class="underline">Box Model:</h2>
@@ -169,8 +236,21 @@
           <li><span class="yellow">padding:</span> Is the space between the border and the content of the element.</li>
           <li><span class="yellow">width and height:</span> This are the dimensions for the element.</li>
           <li><span class="yellow">display:</span> This changes how an element is displayed, for example, if you give it the value of 'inline' the content will be display all in the same line, if you use the 'block' value elements will be display one right below of the one before.</li>
-          <li><span class="yellow">position:</span> This property changes how an element will be positionated, for example, if you use the value 'fixed' the element will be in the position that you gave it, doesn't matter if you scroll in the page, if you use the value 'relative' this will let you positionate your element wherever you want.</li>
+          <li><span class="yellow">position:</span> This property changes how an element will be positionated, for example, if you use the value 'fixed' the element will be in the position that you gave it, doesn't matter if you scroll in the page, if you use the value 'relative' this will let you positionate your element wherever you want. <br>When you use this property, you can use the other properties top, right, left and bottom to move your element.</li>
         </ul>
+        <p class="code">
+          <code>
+            <span class="yellow">.box</span> {<br>
+            <span class="indent"><span class="blue">width:</span> 50%<span class="blue">;</span><br></span>
+            <span class="indent"><span class="blue">margin:</span> 25px<span class="blue">;</span><br></span>
+            } <br><br>
+            <span class="yellow">#image</span> {<br>
+            <span class="indent"><span class="blue">position:</span> relative<span class="blue">;</span><br></span>
+            <span class="indent"><span class="blue">left:</span> -20px<span class="blue">;</span><br></span>
+            <span class="indent"><span class="blue">top:</span> 0<span class="blue">;</span><br></span>
+            }
+          </code>
+        </p>
       </div>
     </section>
     <section class="main-section" id="reference">
